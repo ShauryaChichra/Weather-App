@@ -68,9 +68,9 @@ def crud(city,option):
     try:
         connection = mysql.connector.connect(
             host='localhost', 
-            user='root',      
-            password='shaurya',  
-            database='project' 
+            user='root',      #Enter your username
+            password='shaurya',  #Enter your password
+            database='project' #Enter your database
         )
 
         if connection.is_connected():
@@ -126,5 +126,5 @@ def crud(city,option):
             print("MySQL connection closed.")
 
 
-rows = crud('london',2)
-print(rows)
+# rows = crud('london',2)
+# print(rows)
